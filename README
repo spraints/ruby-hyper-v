@@ -1,0 +1,5 @@
+A Hyper-V helper.
+
+require 'hyper_v'
+
+HyperV::Server.new('servername').virtual_machines.each { |vm| puts vm.name }
