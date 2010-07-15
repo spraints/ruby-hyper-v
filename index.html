@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>spraints/ruby-hyper-v @ GitHub</title>
+	<title>Hyper-V tools for Ruby</title>
 	
 	<style type="text/css">
 		body {
@@ -45,12 +45,22 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/spraints/ruby-hyper-v">ruby-hyper-v</a>
-      <span class="small">by <a href="http://github.com/spraints">spraints</a></span></h1>
+    <h1><a href="http://github.com/spraints/ruby-hyper-v">ruby-hyper-v</a></h1>
 
     <div class="description">
-      Admin stuff for Microsoft Hyper-V
+      A Ruby helper for administering Hyper-V virtual machines.
     </div>
+
+
+    <p>
+      Right now, its best trick is listing the virtual machines on a host:
+      <pre>require 'hyper-v'
+server = HyperV::Server.new('MyServer')
+server.virtual_machines.each do |vm|
+  puts vm.name
+end
+</pre>
+    </p>
 
     
 
